@@ -432,19 +432,50 @@ end)
 
 
 function bonecrush()
-	local mouse = game.Players.LocalPlayer:GetMouse()
-	mouse.KeyDown:connect(function(key)
-		if key == "v" then
-			local lplr = game.Players.LocalPlayer
-			lplr.Character["Bone Crush"].Activator.Crash:Destroy()
-		end
+	local plr = game:GetService("Players").LocalPlayer
+	game.Workspace:WaitForChild("Live")
+	game.Workspace.Live:WaitForChild(plr.Name)
+	local Char = plr.Character
+	local portal = game.workspace["Wormhole"]
+	local Mouse = plr:GetMouse()
+	
+	
+	game:GetService("RunService").RenderStepped:connect(
+		function()
+			
+		
+		end)
+	
+	
+	
+			function bc11()
+				   local lplr = game.Players.LocalPlayer
+					local plr = game:GetService("Players").LocalPlayer
+						local mouse = plr:GetMouse()
+						local place = game.PlaceId
+						Character = game.Players.LocalPlayer
+						Players = game.Players.LocalPlayer.Character
+						MouseFunction = game:GetService("Players").LocalPlayer:GetMouse()
+				   
+				   
+				   Players.Humanoid:EquipTool(Character.Backpack["Bone Crush"])
+					Players["Bone Crush"]:Activate()
+					lplr.Character["Bone Crush"].Activator.Crash:Destroy() 
+				end
+				
+			   
+	Mouse.KeyDown:connect(function(Key)
+					Key = Key:lower()
+				if Key == "k" then
+				bc11()
+				end
 	end)
 end
 
 function bonecrush2()
 	game:GetService("StarterGui"):SetCore("SendNotification", {
 		Title = "1tsJustCmds";
-		Text = "Pressing V while bone crush equipped will";
+		Text = "Pressing K to glich";
 	})
 end
 local Player = game.Players.LocalPlayer
@@ -599,7 +630,7 @@ function commands()
 	print ("_namek")
 	print ("_space")
 	print ("_future")
-	print ("_secret")
+	print ("_secret") 
 	print ("_zaros")
 	print ("_queue")
 	print ("_heaven")
