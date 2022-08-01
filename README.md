@@ -712,7 +712,8 @@ function commands()
 	print ("_aglich for anti glich")
     print ("_de for glich player down earth")
 	print ("_ms for melee spam and _sms for stop")
-	print ("moves for works it Meteor Crash, Anger Rush, Neo Wolf Fang Fist, Wolf Fang Fist, Mach Kick, Strong Kick, Kick Barrage, God Slicer")
+	print ("moves for works it Meteor Crash, Anger Rush, Neo Wolf Fang Fist, Wolf Fang Fist,")
+	print ("Mach Kick, Strong Kick, Kick Barrage, God Slicer")
 
 
 end
