@@ -238,6 +238,70 @@ Player.Chatted:connect(function(cht)
 	end
 end)
 
+function ms()
+    _G.on = true
+
+while _G.on == true do
+
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Meteor Crash"])
+game.Players.LocalPlayer.Character["Meteor Crash"]:Activate()
+    wait (0.5)
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Anger Rush"])
+game.Players.LocalPlayer.Character["Anger Rush"]:Activate()
+    wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Neo Wolf Fang Fist"])
+game.Players.LocalPlayer.Character["Neo Wolf Fang Fist"]:Activate()
+    wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Wolf Fang Fist"])
+game.Players.LocalPlayer.Character["Wolf Fang Fist"]:Activate()
+    wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Mach Kick"])
+game.Players.LocalPlayer.Character["Mach Kick"]:Activate()
+    wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Strong Kick"])
+game.Players.LocalPlayer.Character["Strong Kick"]:Activate()
+    wait(0.5)
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Kick Barrage"])
+game.Players.LocalPlayer.Character["Kick Barrage"]:Activate()
+    wait(0.6)
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["God Slicer"])
+game.Players.LocalPlayer.Character["God Slicer"]:Activate()
+wait()
+end
+end 
+function ms1()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "1tsJustCmds";
+		Text = "melee spam on but it have u bug dont works for all";
+	})
+end
+
+local Player = game.Players.LocalPlayer
+Player.Chatted:connect(function(cht)
+	if cht:match("_ms") or cht:match("_meleespam") then
+		ms()
+		ms1()
+	end
+end)
+
+function mss()
+    _G.on = false
+end 
+function mss1()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "1tsJustCmds";
+		Text = "melee spam on but it have u bug dont works for all";
+	})
+end
+
+local Player = game.Players.LocalPlayer
+Player.Chatted:connect(function(cht)
+	if cht:match("_sms") or cht:match("_stopmeleespam") then
+		mss()
+		mss1()
+	end
+end)
+
 function freeze()
 	local plr = game:GetService("Players").LocalPlayer
 	local mouse = plr:GetMouse()
@@ -647,6 +711,8 @@ function commands()
 	print ("_beerus / _ber for beerus animation")
 	print ("_aglich for anti glich")
     print ("_de for glich player down earth")
+	print ("_ms for melee spam and _sms for stop")
+	print ("moves for works it Meteor Crash, Anger Rush, Neo Wolf Fang Fist, Wolf Fang Fist, Mach Kick, Strong Kick, Kick Barrage, God Slicer")
 
 
 end
@@ -1094,7 +1160,6 @@ ab.Text="Roblox Tried to kick you but we didnt let them kick you :D"wait(2)ab.Te
 								beeru1()
 							end
 						end)
-
 
 
 
