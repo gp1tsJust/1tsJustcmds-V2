@@ -708,7 +708,7 @@ function commands()
 	print ("_ms for melee spam and _sms for stop")
 	print ("melee spam on but you have to have all the moves written in the cmds to make spam work")
 	print ("moves for works it Meteor Crash, Anger Rush, Neo Wolf Fang Fist, Wolf Fang Fist,")
-	print ("Mach Kick, Strong Kick, Kick Barrage, God Slicer, Deadly Dance")
+	print ("Mach Kick, Strong Kick, Kick Barrage, God Slicer, Deadly Dance, TS Molotov, Vital Strike")
 
 
 end
