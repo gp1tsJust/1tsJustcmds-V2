@@ -199,29 +199,14 @@ end)
 
 
 function noslow()
-    (getgenv()).noslow = true;
-
-    repeat
-        wait();
-    until game:IsLoaded();
-    game.Players.LocalPlayer.PlayerGui:WaitForChild("HUD");
-    (game:GetService("RunService")).RenderStepped:Connect(function()
-        for _, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-            if (getgenv()).noslow then
-                if v.Name == "Action" or (v.Name == "Attacking") or 
-                        (v.Name == "Using") or (v.Name == "hyper") or 
-                        (v.Name == "Hyper") or (v.Name == "heavy") or 
-                        (v.Name == "KiBlasted") or (v.Name == "Tele") or 
-                        (v.Name == "tele") or (v.Name == "Killed") or 
-                        (v.Name == "Slow") then
-                    v:Destroy();
-                end;
-                if game.Players.LocalPlayer.Character.Block.Value then
-                    game.Players.LocalPlayer.Character.Block.Value = false;
-                end;
-            end;
-        end;
-    end);
+	local cooldowns = {"Action","Attacking","Activity","Using","hyper","Hyper","Tele","tele","heavy","KiBlasted","Killed","Slow","BodyVelocity"}
+	game.RunService.Stepped:connect(function ()
+		for _, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+			if table.find(cooldowns,v.Name) then
+				v:Destroy()
+			end
+		end
+	end)
 end 
 function noslow2()
 	game:GetService("StarterGui"):SetCore("SendNotification", {
