@@ -239,40 +239,49 @@ Player.Chatted:connect(function(cht)
 end)
 
 function ms()
-    _G.on = true
+_G.on = true
 
-while _G.on == true do
-
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Meteor Crash"])
-game.Players.LocalPlayer.Character["Meteor Crash"]:Activate()
-    wait (0.5)
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Anger Rush"])
-game.Players.LocalPlayer.Character["Anger Rush"]:Activate()
-    wait(0.5)
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Neo Wolf Fang Fist"])
-game.Players.LocalPlayer.Character["Neo Wolf Fang Fist"]:Activate()
-    wait(0.5)
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Wolf Fang Fist"])
-game.Players.LocalPlayer.Character["Wolf Fang Fist"]:Activate()
-    wait(0.5)
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Mach Kick"])
-game.Players.LocalPlayer.Character["Mach Kick"]:Activate()
-    wait(0.5)
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Strong Kick"])
-game.Players.LocalPlayer.Character["Strong Kick"]:Activate()
-    wait(0.5)
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Kick Barrage"])
-game.Players.LocalPlayer.Character["Kick Barrage"]:Activate()
-    wait(0.6)
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["God Slicer"])
-game.Players.LocalPlayer.Character["God Slicer"]:Activate()
-wait()
-end
+	while _G.on == true do
+	
+		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Meteor Crash"])
+		game.Players.LocalPlayer.Character["Meteor Crash"]:Activate()
+			wait (0.5)
+		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Anger Rush"])
+		game.Players.LocalPlayer.Character["Anger Rush"]:Activate()
+			wait(0.5)
+		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Neo Wolf Fang Fist"])
+		game.Players.LocalPlayer.Character["Neo Wolf Fang Fist"]:Activate()
+			wait(0.5)
+		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Wolf Fang Fist"])
+		game.Players.LocalPlayer.Character["Wolf Fang Fist"]:Activate()
+			wait(0.5)
+		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Mach Kick"])
+		game.Players.LocalPlayer.Character["Mach Kick"]:Activate()
+			wait(0.5)
+		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["TS Molotov"])
+		game.Players.LocalPlayer.Character["TS Molotov"]:Activate()
+			wait(0.5)
+		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Vital Strike"])
+		game.Players.LocalPlayer.Character["Vital Strike"]:Activate()
+			wait(0.5)
+		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Strong Kick"])
+		game.Players.LocalPlayer.Character["Strong Kick"]:Activate()
+			wait(0.5)
+		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Kick Barrage"])
+		game.Players.LocalPlayer.Character["Kick Barrage"]:Activate()
+			wait(0.5)
+		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Deadly Dance"])
+		game.Players.LocalPlayer.Character["Deadly Dance"]:Activate()
+			wait(0.6)
+		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["God Slicer"])
+		game.Players.LocalPlayer.Character["God Slicer"]:Activate()
+	wait()
+	end
 end 
 function ms1()
 	game:GetService("StarterGui"):SetCore("SendNotification", {
 		Title = "1tsJustCmds";
-		Text = "melee spam on but it have u bug dont works for all";
+		Text = "melee spam on but you have to have all the moves written in the cmds to make spam work";
 	})
 end
 
@@ -290,7 +299,7 @@ end
 function mss1()
 	game:GetService("StarterGui"):SetCore("SendNotification", {
 		Title = "1tsJustCmds";
-		Text = "melee spam on but it have u bug dont works for all";
+		Text = "melee spam off but you have to have all the moves written in the cmds to make spam work";
 	})
 end
 
@@ -712,8 +721,9 @@ function commands()
 	print ("_aglich for anti glich")
     print ("_de for glich player down earth")
 	print ("_ms for melee spam and _sms for stop")
+	print ("melee spam on but you have to have all the moves written in the cmds to make spam work")
 	print ("moves for works it Meteor Crash, Anger Rush, Neo Wolf Fang Fist, Wolf Fang Fist,")
-	print ("Mach Kick, Strong Kick, Kick Barrage, God Slicer")
+	print ("Mach Kick, Strong Kick, Kick Barrage, God Slicer, Deadly Dance")
 
 
 end
