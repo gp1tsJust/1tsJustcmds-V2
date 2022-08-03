@@ -524,7 +524,7 @@ function bonecrush()
 			   
 	Mouse.KeyDown:connect(function(Key)
 					Key = Key:lower()
-				if Key == "k" then
+				if Key == "b" then
 				bc11()
 				end
 	end)
@@ -533,7 +533,7 @@ end
 function bonecrush2()
 	game:GetService("StarterGui"):SetCore("SendNotification", {
 		Title = "1tsJustCmds";
-		Text = "Pressing K to glich";
+		Text = "Pressing B to glich";
 	})
 end
 local Player = game.Players.LocalPlayer
